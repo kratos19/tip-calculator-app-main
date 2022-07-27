@@ -5,40 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Mono:700">
+  <link rel="stylesheet" href="./css/style.css">
   <title>Frontend Mentor | Tip calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main>
+    <div class="calculator-container">
+      <h1>Spli<br>tter</h1>
+      <div class="calculator-container-wrapper">
+        <div class="calculator-tip-section">
+          <div class="calculator-bill-section">
+            <h2>Bill</h2>
+            <input type="text" placeholder="142.55">
+            <img src="./images/icon-dollar.svg" alt="Dollar Icon">
+          </div>
+          <h2>Select Tip %</h2>
+          <div class="calculator-tip-section-container grid-container">
+            <div class="calculator-tip-section-tips">
+              5%
+            </div>
+            <div class="calculator-tip-section-tips">
+              10%
+            </div>
+            <div class="calculator-tip-section-tips">
+              15%
+            </div>
+            <div class="calculator-tip-section-tips">
+              25%
+            </div>
+            <div class="calculator-tip-section-tips">
+              50%
+            </div>
+            <div class="calculator-tip-section-tips">
+              <input class="input-text" type="text" placeholder="Custom">
+            </div>
+          </div>
+          <div class="calculator-tip-section-people">
+            <h2>Number of People</h2>
+            <input type="text" placeholder="5">
+            <img src="./images/icon-person.svg" alt="Person Icon">
+          </div>
+        </div>
+        <div class="calcultator-tip-splited-amount-section">
+          <div class="grid-container-footer">
+            <div class="calcultator-tip-amount">
+              <h2>Tip Amount<br><span>/ person</span></h2>
+            </div>
+            <div class="calcultator-tip-amount price">
+              $4.27
+            </div>
+            <div class="calcultator-tip-amount total">
+              <h2>Total<br><span>/ person</span></h2>
+            </div>
+            <div class="calcultator-tip-amount total price">
+            $32.79
+            </div>
+          </div>
+          <div class="calculator-tip-reset">
+            <button class="btn">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
