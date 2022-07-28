@@ -14,10 +14,11 @@
     <div class="calculator-container">
       <h1>Spli<br>tter</h1>
       <div class="calculator-container-wrapper">
+        <!--Start of calculator-tip-section-->
         <div class="calculator-tip-section">
           <div class="calculator-bill-section">
             <h2>Bill</h2>
-            <input type="text" placeholder="142.55">
+            <input type="text" value="142.55">
             <img src="./images/icon-dollar.svg" alt="Dollar Icon">
           </div>
           <h2>Select Tip %</h2>
@@ -43,29 +44,34 @@
           </div>
           <div class="calculator-tip-section-people">
             <h2>Number of People</h2>
-            <input type="text" placeholder="5">
+            <input type="text" value="5">
             <img src="./images/icon-person.svg" alt="Person Icon">
           </div>
         </div>
+        <!-- End of calculator-tip-section -->
+        <!-- Start of calcultator-tip-splited-amount-section -->
         <div class="calcultator-tip-splited-amount-section">
-          <div class="grid-container-footer">
-            <div class="calcultator-tip-amount">
-              <h2>Tip Amount<br><span>/ person</span></h2>
+          <div class="calculator-tip-splited-wrapper">
+            <div class="grid-container-amount-section">
+              <div class="calcultator-tip-amount">
+                <h2>Tip Amount<br><span>/ person</span></h2>
+              </div>
+              <div class="calcultator-tip-amount price">
+                $4.27
+              </div>
+              <div class="calcultator-tip-amount total">
+                <h2>Total<br><span>/ person</span></h2>
+              </div>
+              <div class="calcultator-tip-amount total price">
+              $32.79
+              </div>
             </div>
-            <div class="calcultator-tip-amount price">
-              $4.27
+            <div class="calculator-tip-reset">
+              <button class="btn">Reset</button>
             </div>
-            <div class="calcultator-tip-amount total">
-              <h2>Total<br><span>/ person</span></h2>
-            </div>
-            <div class="calcultator-tip-amount total price">
-            $32.79
-            </div>
-          </div>
-          <div class="calculator-tip-reset">
-            <button class="btn">Reset</button>
-          </div>
+          </div> 
         </div>
+        <!-- End of calcultator-tip-splited-amount-section -->
       </div>
     </div>
   </main>
