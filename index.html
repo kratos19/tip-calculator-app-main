@@ -1,79 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Mono:700">
-  <link rel="stylesheet" href="./css/style.css">
-  <title>Frontend Mentor | Tip calculator app</title>
-</head>
-<body>
-  <main>
-    <div class="calculator-container">
-      <h1>Spli<br>tter</h1>
-      <div class="calculator-container-wrapper">
-        <!--Start of calculator-tip-section-->
-        <div class="calculator-tip-section">
-          <div class="calculator-bill-section">
-            <h2>Bill</h2>
-            <input type="text" value="142.55">
-            <img src="./images/icon-dollar.svg" alt="Dollar Icon">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Space+Mono:700"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <main>
+      <div class="calculator-container">
+        <h1>Spli<br />tter</h1>
+        <div class="calculator-container-wrapper">
+          <!--Start of calculator-tip-section-->
+          <div class="calculator-tip-section">
+            <div class="calculator-bill-section">
+              <h2>Bill</h2>
+              <input
+                type="number"
+                class="bill-input"
+                value="142.55"
+                min="1"
+                max="999"
+              />
+              <img src="./images/icon-dollar.svg" alt="Dollar Icon" />
+            </div>
+            <h2>Select Tip %</h2>
+            <div class="calculator-tip-section-container grid-container">
+              <div class="calculator-tip-section-tips">5%</div>
+              <div class="calculator-tip-section-tips">10%</div>
+              <div class="calculator-tip-section-tips active">15%</div>
+              <div class="calculator-tip-section-tips">25%</div>
+              <div class="calculator-tip-section-tips">50%</div>
+              <div class="calculator-tip-section-tips tip-section-custom">
+                <input
+                  class="input-text custom-tip-input"
+                  type="number"
+                  size="number"
+                  pattern="[0-9]+"
+                  placeholder="Custom"
+                />
+              </div>
+            </div>
+            <div class="calculator-tip-section-people">
+              <h2>Number of People</h2>
+              <input
+                class="number-of-people-input"
+                type="number"
+                size="number"
+                pattern="[0-9]+"
+                value="5"
+              />
+              <img src="./images/icon-person.svg" alt="Person Icon" />
+            </div>
           </div>
-          <h2>Select Tip %</h2>
-          <div class="calculator-tip-section-container grid-container">
-            <div class="calculator-tip-section-tips">
-              5%
-            </div>
-            <div class="calculator-tip-section-tips">
-              10%
-            </div>
-            <div class="calculator-tip-section-tips">
-              15%
-            </div>
-            <div class="calculator-tip-section-tips">
-              25%
-            </div>
-            <div class="calculator-tip-section-tips">
-              50%
-            </div>
-            <div class="calculator-tip-section-tips">
-              <input class="input-text" type="text" placeholder="Custom">
+          <!-- End of calculator-tip-section -->
+          <!-- Start of calcultator-tip-splited-amount-section -->
+          <div class="calcultator-tip-splited-amount-section">
+            <div class="calculator-tip-splited-wrapper">
+              <div class="grid-container-amount-section">
+                <div class="calcultator-tip-amount">
+                  <h2>Tip Amount<br /><span>/ person</span></h2>
+                </div>
+                <div class="calcultator-tip-amount price tip-amount">$4.27</div>
+                <div class="calcultator-tip-amount total">
+                  <h2>Total<br /><span>/ person</span></h2>
+                </div>
+                <div class="calcultator-tip-amount total price total-amount">
+                  $32.79
+                </div>
+              </div>
+              <div class="calculator-tip-reset">
+                <button class="btn btn-reset">Reset</button>
+              </div>
             </div>
           </div>
-          <div class="calculator-tip-section-people">
-            <h2>Number of People</h2>
-            <input type="text" value="5">
-            <img src="./images/icon-person.svg" alt="Person Icon">
-          </div>
+          <!-- End of calcultator-tip-splited-amount-section -->
         </div>
-        <!-- End of calculator-tip-section -->
-        <!-- Start of calcultator-tip-splited-amount-section -->
-        <div class="calcultator-tip-splited-amount-section">
-          <div class="calculator-tip-splited-wrapper">
-            <div class="grid-container-amount-section">
-              <div class="calcultator-tip-amount">
-                <h2>Tip Amount<br><span>/ person</span></h2>
-              </div>
-              <div class="calcultator-tip-amount price">
-                $4.27
-              </div>
-              <div class="calcultator-tip-amount total">
-                <h2>Total<br><span>/ person</span></h2>
-              </div>
-              <div class="calcultator-tip-amount total price">
-              $32.79
-              </div>
-            </div>
-            <div class="calculator-tip-reset">
-              <button class="btn">Reset</button>
-            </div>
-          </div> 
-        </div>
-        <!-- End of calcultator-tip-splited-amount-section -->
       </div>
-    </div>
-  </main>
-</body>
+      <script src="./js/scripts.js"></script>
+    </main>
+  </body>
 </html>
